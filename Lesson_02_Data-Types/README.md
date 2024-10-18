@@ -1,94 +1,47 @@
-# 📝 Solidity Contract Explanation
+# Lesson2 Solidity Contract
 
-This repository contains a **simple Solidity contract** demonstrating multiple ways to **initialize and update state variables**:
-- Direct initialization
-- Constructor-based initialization
-- Function-based updates
+## 🔍 Overview
 
-## 🔍 Code Overview
+The `Lesson2` contract demonstrates the use of various data types and structures in Solidity, including value types, reference types, mappings, structs, and enums. It serves as an educational example for those looking to understand the fundamentals of Solidity programming.
+
+## Features
+
+- **Value Types**: Demonstrates the use of boolean, unsigned integers, signed integers, address types, and byte types.
+- **Reference Types**: Includes fixed-size and dynamic arrays.
+- **Structs**: Defines a `Person` struct to store user information.
+- **Mappings**: Allows tracking of user balances through a mapping.
+- **Enums**: Uses an enum to manage the status of a process (Pending, Shipped, Delivered).
+- **Events**: Emits events on state changes for better tracking.
+- **Access Control**: Restricts sensitive operations to the contract owner.
+
+## Data Types Used
+
+- **Value Types**:
+  - Booleans: `isActive`, `isOk`
+  - Unsigned Integers: `num1`, `num2`, `unsignedNumber`
+  - Signed Integers: `signedNumber`, `maxInt`, `minInt`
+  - Address: `owner`, `owner2`
+  - Bytes: `fixedBytes`, `dynamicBytes`
+
+- **Reference Types**:
+  - Fixed-size Array: `fixedArray`
+  - Dynamic Array: `dynamicArray`
+
+- **Struct**: `Person`
+- **Mapping**: `balances`
+- **Enum**: `Status`
+
+## Contract Structure
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-contract myfc {
-    // Directly initialized variables
-    string public hey = "Subrata Das"; 
-    uint256 public num = 10;
-
-    // Variables initialized via constructor
-    string public name;
-    uint256 public no;
-
-    // Constructor to set initial values during deployment
-    constructor(string memory _name, uint256 _no) {
-        name = _name;
-        no = _no;
-    }
-
-    // Variables to be updated via function
-    string public name2;
-    uint256 public num2;
-
-    // Function to update the variables `name2` and `num2`
-    function addinfo(string memory _name2, uint256 _num2) public {
-        name2 = _name2;
-        num2 = _num2;
-    }
+contract Lesson2 {
+    // Variables, functions, and modifiers are defined here.
 }
 
-## ⚙️ Explanation
-1. SPDX-License Identifier & Solidity Version
-SPDX-License Identifier: Ensures the contract's licensing information is clear (in this case, MIT License).
-pragma solidity ^0.8.13;: Specifies that the contract will work with Solidity 0.8.13 or higher.
-2. Directly Initialized Variables
-solidity
-Copy code
-string public hey = "Subrata Das";
-uint256 public num = 10;
-These variables are directly initialized in the contract.
-Being public, they generate getter functions automatically and can be accessed externally.
-3. Using a Constructor for Initialization
-solidity
-Copy code
-string public name;
-uint256 public no;
-
-constructor(string memory _name, uint256 _no) {
-    name = _name;
-    no = _no;
-}
-The constructor initializes name and no at the time of contract deployment.
-Useful when you want initial values to be set only once.
-4. Function-based Updates
-solidity
-Copy code
-string public name2;
-uint256 public num2;
-
-function addinfo(string memory _name2, uint256 _num2) public {
-    name2 = _name2;
-    num2 = _num2;
-}
-The addinfo function allows updating name2 and num2 after deployment.
-memory keyword ensures the function parameters are temporary and not stored on the blockchain.
-
-🚀 How to Deploy & Test
-Deploy the Contract:
-
-Use Remix IDE or any local blockchain environment.
-If deploying on Remix, select Solidity 0.8.13+ compiler version.
-Initialize Constructor Variables:
-
-During deployment, pass values to _name and _no to set name and no.
-Call the addinfo Function:
-Use the function to update name2 and num2 dynamically.
-
-📚 Key Concepts
-SPDX-License Identifier: Makes license information clear.
-Public Variables: Generates getter functions automatically.
-Constructor: Initializes state variables during deployment.
-Function: Allows updating state variables after deployment.
-
-📧 Contact
-If you have any questions or suggestions, feel free to reach out at subratadasgit786@gmail.com.
+```Functions
+constructor(): Sets the contract deployer as the owner.
+addElements(uint value): Adds an element to the dynamic array.
+updateBalance(address user, uint amount): Updates the balance of a user. Can only be called by the owner.
