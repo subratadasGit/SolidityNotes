@@ -40,8 +40,5 @@ pragma solidity ^0.8.13;
 contract Lesson2 {
     // Variables, functions, and modifiers are defined here.
 }
+```
 
-```Functions
-constructor(): Sets the contract deployer as the owner.
-addElements(uint value) // Adds an element to the dynamic array.
-updateBalance(address user, uint amount) // Updates the balance of a user. Can only be called by the owner.
