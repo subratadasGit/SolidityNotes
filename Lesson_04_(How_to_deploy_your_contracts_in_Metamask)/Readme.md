@@ -40,7 +40,7 @@ contract calculator2 {
     }
 
     function mul() public {
-        result *= 1;
+        result *= 2;
     }
 
     function get() public view returns (uint256) {
