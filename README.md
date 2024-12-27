@@ -1,6 +1,6 @@
 
 # 🌟 Solidity Notes  
-![Solidity Logo](https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg)  
+
 
 This repository is a **comprehensive collection of notes and code snippets** for building smart contracts using **Solidity**. Whether you're new to blockchain development or polishing your expertise, these notes will guide you through essential concepts, best practices, and advanced topics for Ethereum and EVM-based smart contracts.  
 
