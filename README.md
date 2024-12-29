@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/55CpsvH/Purple-Simple-and-Modern-Blockchain-Technology-Banner.jpg" alt="Purple-Simple-and-Modern-Blockchain-Technology-Banner" border="0">
+
 
 
 # 🌟 Solidity Notes  
