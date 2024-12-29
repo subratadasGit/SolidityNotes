@@ -1,5 +1,9 @@
 
+<div align="center">
+  <img height="200" src="[https://i.imgflip.com/65efzo.gif](https://media.licdn.com/dms/image/v2/D5622AQFA_IsLTQbS4w/feedshare-shrink_800/B56ZQTzPf5G4Ag-/0/1735498989541?e=1738195200&v=beta&t=1uFPn3CKmgdvTWKyDMu5PIp0GnT9o8ynUr4slzq2oHA)"  />
+</div>
 
+###
 
 # 🌟 Solidity Notes  
 
