@@ -1,5 +1,9 @@
+<img src="https://i.ibb.co/55CpsvH/Purple-Simple-and-Modern-Blockchain-Technology-Banner.jpg" alt="Purple-Simple-and-Modern-Blockchain-Technology-Banner" border="0">
+
 
 # 🌟 Solidity Notes  
+
+
 
 
 This repository is a **comprehensive collection of notes and code snippets** for building smart contracts using **Solidity**. Whether you're new to blockchain development or polishing your expertise, these notes will guide you through essential concepts, best practices, and advanced topics for Ethereum and EVM-based smart contracts.  
